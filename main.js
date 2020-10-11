@@ -17,10 +17,10 @@ app.use('/bootstrap/css', express.static(__dirname + '/node_modules/bootstrap/di
 // DB
 var MongoClient = require('mongodb').MongoClient;
 var database_url = "mongodb://localhost:27017/";
-var database_name = "Stazione Meteo";
+var database_name = "weather station";
 var collection = "measurements";
-var temperature_key = "Temperatura";
-var humidity_key = "Umidita'";
+var temperature_key = "temperature";
+var humidity_key = "humidity";
 
 var db_error = false;
 
